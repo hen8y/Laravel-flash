@@ -76,7 +76,7 @@ You can define the timeout for your flash notification in the config file
 
 Example
 
-```html
+```blade
 
 <!DOCTYPE html>
 <html>
