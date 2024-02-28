@@ -71,8 +71,8 @@ You can define the timeout for your flash notification in the config file
 
 ## Usage
 
-- Include the flash component to your layout @include('flash::components.flash')
-- Add @flashCss and @flashJs for js and css.
+- Include the flash component to your main layout `@include('flash::components.flash')`
+- Add `@flashCss and` `@flashJs` in your main layout too for js and css.
 
 Example
 
@@ -88,7 +88,11 @@ Example
 
     </head>
     <body class="antialiased">
+        <div>
 
+        <!-- Your content -->
+
+        </div>
         @include('flash::components.flash')
         @flashJs
     </body>
@@ -100,7 +104,7 @@ Example
 
 To display a flash message, you call the `flash` method. it accepts 2 parameter
 
-- Type (There 3 types of notifications: Info, success, error)
+- Type ( There 3 types of notifications: `Info`, `success`, `error` )
 - Message.
 
 The message type must always be lower case
@@ -110,7 +114,7 @@ Example Usage:
 ```php
     Route::get('/test', function () {
 
-        flash('info', 'This is a info message');
+        flash('info', 'This is an info message');
 
         return redirect('/');
 
