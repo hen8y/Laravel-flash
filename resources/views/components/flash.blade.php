@@ -10,6 +10,6 @@
 </div>
 <script>
     var flash = {
-        timeout: "{{ config('flash.timeout') }}",
+        timeout: {{ config('flash.timeout') }},
     }
 </script>
