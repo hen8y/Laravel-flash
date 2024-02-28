@@ -1,11 +1,11 @@
 {
   "resources/css/flash.css": {
-    "file": "assets/flash-6c31886d.css",
+    "file": "assets/flash-822eb2ae.css",
     "isEntry": true,
     "src": "resources/css/flash.css"
   },
   "resources/js/flash.js": {
-    "file": "assets/flash-79d93c39.js",
+    "file": "assets/flash-dac11ec2.js",
     "isEntry": true,
     "src": "resources/js/flash.js"
   }
