@@ -13,17 +13,10 @@ composer require hen8y/laravel-flash
 Or add the following line to the require block of your `composer.json` file.
 
 ```php
-hen8y/laravel-flash": "1.*"
+"hen8y/laravel-flash": "1.0"
 ```
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
-
-To reload your application run the following command:
-
-```bash
-    composer dump-autoload
-
-```
 
 Once Laravel Flash is installed, you need to register the service provider. Open up config/app.php and add the following to the providers key.
 
@@ -35,6 +28,14 @@ Once Laravel Flash is installed, you need to register the service provider. Open
 ]
 
 ```
+
+To reload your application run the following command:
+
+```bash
+composer dump-autoload
+
+```
+
 
 You can publish the configuration file and assets by running:
 
