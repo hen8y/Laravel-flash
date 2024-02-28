@@ -1,0 +1,33 @@
+{
+    "name": "hen8y/laravel-flash",
+    "description": "Flash notification for laravel",
+    "keywords": ["laravel-notification","LaravelFlash","Flash","Laravel","laravel-flash","laravel-notify"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hen8y\\Flash\\": "src/"
+        },
+        "files":[
+            "src/Helpers/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ogbonna Henry",
+            "email": "hen8y@outlook.com",
+            "homepage": "https://hen8y.dev"
+        }
+    ],
+    "require": {
+        "php": "~8.0",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Hen8y\\Flash\\LaravelFlashServiceProvider"
+            ]
+        }
+    }
+}
