@@ -1,5 +1,9 @@
 # laravel-flash
 
+## Demo
+
+Checkout demo of the [laravel-flash](https://hen8y.dev/demo/flash)
+
 ## Installation
 
 [PHP](https://php.net) 8.0, [LARAVEL](https://laravel.com), and [Composer](https://getcomposer.org) are required.
@@ -13,7 +17,7 @@ composer require hen8y/laravel-flash
 Or add the following line to the require block of your `composer.json` file.
 
 ```php
-"hen8y/laravel-flash": "1.0"
+"hen8y/laravel-flash": "^2.0"
 ```
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
@@ -81,9 +85,9 @@ return [
     |--------------------------------------------------------------------------
     |
     | Specify the theme colors you want for your flash notification.
+    | If dark mode if enabled this would be used as light mode theme
     |
     | MUST BE HEX.
-    |
     */
     "theme" => [
         "info" => "#232113",

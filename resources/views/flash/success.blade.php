@@ -18,7 +18,7 @@
                     <p>{{ session('flash.message') }}</p>
 
                     <div class="cursor-pointer rounded-full opacity-80" fsh-on:click="show = false" style="background-color: {{ lightenBG(config('flash.theme.success'),0.3) }}" >
-                        @if(config('flash.cancel_btn_type_btn_type') == 'svg')
+                        @if(config('flash.cancel_btn_type') == 'svg')
                             <x-flash::svg.cancel size="25" />
                         @else
                             <div class="px-2 p-1 text-xs">close</div>
@@ -27,12 +27,12 @@
                 </div>
             </div>
 
-            <div class="notification p-3 rounded-full px-5 text-xs sm:text-sm text-white inline-block mx-auto mb-10 text-center shadow-lg z-[100] {{ config('flash.enable_dark_mode') === true ? 'hidden dark:block' : '' }} " style="background-color: {{ config('flash.dark-theme.success') }}">
+            <div class="p-3 rounded-full px-5 text-xs sm:text-sm text-white mx-auto mb-10 text-center shadow-lg z-[100] {{ config('flash.enable_dark_mode') === true ? 'hidden dark:inline-block' : 'hidden' }} " style="background-color: {{ config('flash.dark-theme.success') }}">
                 <div class="flex gap-4 items-center min-w-[150px] justify-between">
                     <p>{{ session('flash.message') }}</p>
 
                     <div class="cursor-pointer rounded-full opacity-80" fsh-on:click="show = false" style="background-color: {{ lightenBG(config('flash.dark-theme.success'),0.3) }}" >
-                        @if(config('flash.cancel_btn_type_btn_type') == 'svg')
+                        @if(config('flash.cancel_btn_type') == 'svg')
                             <x-flash::svg.cancel size="25" />
                         @else
                             <div class="px-2 p-1 text-xs">close</div>

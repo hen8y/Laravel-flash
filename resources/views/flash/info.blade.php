@@ -27,7 +27,7 @@
                 </div>
             </div>
 
-            <div class="notification p-3 rounded-full px-5 text-xs sm:text-sm text-white inline-block mx-auto mb-10 text-center shadow-lg z-[100] {{ config('flash.enable_dark_mode') === true ? 'hidden dark:block' : '' }} " style="background-color: {{ config('flash.dark-theme.info') }}">
+            <div class="p-3 rounded-full px-5 text-xs sm:text-sm text-white mx-auto mb-10 text-center shadow-lg z-[100] {{ config('flash.enable_dark_mode') === true ? 'hidden dark:inline-block' : 'hidden' }} " style="background-color: {{ config('flash.dark-theme.info') }}">
                 <div class="flex gap-4 items-center min-w-[150px] justify-between">
                     <p>{{ session('flash.message') }}</p>
 

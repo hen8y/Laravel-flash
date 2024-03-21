@@ -30,6 +30,7 @@ return [
     |--------------------------------------------------------------------------
     |
     | Specify the theme colors you want for your flash notification.
+    | If dark mode if enabled this would be used as light mode theme
     |
     | MUST BE HEX.
     |
