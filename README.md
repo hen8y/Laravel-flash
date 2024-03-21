@@ -36,7 +36,6 @@ composer dump-autoload
 
 ```
 
-
 You can publish the configuration file and assets by running:
 
 ```bash
@@ -56,7 +55,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Timeout 
+    | Timeout
     |--------------------------------------------------------------------------
     |
     | Specifies the duration, in seconds, for which the notification will remain visible.
@@ -64,16 +63,62 @@ return [
     */
     "timeout" => 2000,
 
+     /*
+    |--------------------------------------------------------------------------
+    | Cancel Button Type
+    |--------------------------------------------------------------------------
+    |
+    | Choose if the flash notification should be svg or text.
+    |
+    */
+    "cancel_btn_type" => "svg",
+
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Flash Theme Colors
+    |--------------------------------------------------------------------------
+    |
+    | Specify the theme colors you want for your flash notification.
+    |
+    | MUST BE HEX.
+    |
+    */
+    "theme" => [
+        "info" => "#232113",
+        "success" => "#166534",
+        "error" => "#b91c1c",
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Enable Dark Mode
+    |--------------------------------------------------------------------------
+    |
+    | Set dark mode to true and specify the colors you want for your dark mode.
+    |
+    | MUST BE HEX.
+    |
+    */
+    "enable_dark_mode" => false,
+
+    "dark-theme" => [
+        "info" => "#232113",
+        "success" => "#22c55e",
+        "error" => "#b91c1c",
+    ]
+
 ];
 
 ```
 
-You can define the timeout for your flash notification in the config file
+You can define the timeout, flash theme colors for your flash notification in the config file
 
 ## Usage
 
-- Include the flash component to your main layout `@include('flash::components.flash')`
-- Add `@flashCss and` `@flashJs` in your main layout too for js and css.
+- Include the flash component to your main layout `<x-flash::flash />`
+- Add `@flashCss` in your main layout before all css files.
 
 Example
 
@@ -86,7 +131,7 @@ Example
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Laravel</title>
         @flashCss
-
+        {{-- Your Css here --}}
     </head>
     <body class="antialiased">
         <div>
@@ -94,8 +139,7 @@ Example
         <!-- Your content -->
 
         </div>
-        @include('flash::components.flash')
-        @flashJs
+        <x-flash::flash />
     </body>
 </html>
 

@@ -1,5 +1,4 @@
 import Alpine from 'alpinejs'
- 
 
 const notification = document.querySelector('.notification')
 if (notification) {
@@ -7,6 +6,7 @@ if (notification) {
         notification.remove()
     }, flash.timeout)
 }
-Alpine.prefix("fsh-");
 
 Alpine.start();
+
+Alpine.prefix("fsh-");
