@@ -121,7 +121,7 @@ You can define the timeout, flash theme colors for your flash notification in th
 
 ## Usage
 
-- Include the flash component to your main layout `<x-flash::flash />`
+- Include the flash component to your main layout immediately after your body tag `<x-flash::flash />`
 - Add `@flashCss` in your main layout before all css files.
 
 Example
@@ -138,12 +138,12 @@ Example
         {{-- Your Css here --}}
     </head>
     <body class="antialiased">
+        <x-flash::flash />
         <div>
 
         <!-- Your content -->
 
         </div>
-        <x-flash::flash />
     </body>
 </html>
 
