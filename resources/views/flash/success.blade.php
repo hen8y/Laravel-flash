@@ -14,7 +14,7 @@
         >
 
             <div class=" p-3 rounded-full px-5 text-xs sm:text-sm text-white inline-block mx-auto  mb-10 text-center shadow-lg z-[100] {{ config('flash.enable_dark_mode') === true ? 'block dark:hidden' : '' }} " style="background-color: {{ config('flash.theme.success') }}">
-                <div class="flex gap-4 items-center min-w-[150px] justify-between">
+                <div class="flex gap-4 items-center min-w-[150px] max-w-[320px] sm:max-w-0 justify-between">
                     <p>{{ session('flash.message') }}</p>
 
                     <div class="cursor-pointer rounded-full opacity-80" fsh-on:click="show = false" style="background-color: {{ lightenBG(config('flash.theme.success'),0.3) }}" >
