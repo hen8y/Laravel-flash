@@ -42,6 +42,9 @@ composer dump-autoload
 
 You can publish the configuration file and assets by running:
 
+If you're also upgrading from `v1.*`make sure delete the `public/vendor/hen8y/laravel-flash` folder and run this
+
+
 ```bash
     php artisan vendor:publish --provider="Hen8y\Flash\LaravelFlashServiceProvider"
 
@@ -121,7 +124,7 @@ You can define the timeout, flash theme colors for your flash notification in th
 
 ## Usage
 
-- Include the flash component to your main layout `<x-flash::flash />`
+- Include the flash component to your main layout immediately after your body tag `<x-flash::flash />`
 - Add `@flashCss` in your main layout before all css files.
 
 Example
@@ -138,12 +141,12 @@ Example
         {{-- Your Css here --}}
     </head>
     <body class="antialiased">
+        <x-flash::flash />
         <div>
 
         <!-- Your content -->
 
         </div>
-        <x-flash::flash />
     </body>
 </html>
 
