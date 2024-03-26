@@ -42,7 +42,7 @@ composer dump-autoload
 
 You can publish the configuration file and assets by running:
 
-If you're also upgrading from `v1.*`make sure delete the `public/vendor/hen8y/laravel-flash` folder and run this
+If you're also upgrading from `v1.*` make sure to delete the `public/vendor/hen8y/laravel-flash` folder and run this too
 
 
 ```bash
