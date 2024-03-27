@@ -14,7 +14,7 @@
         >
 
             <div class=" p-3 rounded-full  w-full px-5 text-xs sm:text-sm text-white inline-block mx-auto mb-10 text-center shadow-lg z-[1000] {{ config('flash.enable_dark_mode') === true ? 'block dark:hidden' : '' }} " style="background-color: {{ config('flash.theme.error') }}">
-                <div class="flex gap-4 items-center min-w-52  w-full max-w-[320px] sm:max-w-screenjustify-between">
+                <div class="flex gap-4 items-center min-w-52  w-full max-w-[320px] sm:max-w-screen justify-between">
                     <p>{{ session('flash.message') }}</p>
 
                     <div class="cursor-pointer rounded-full opacity-80" fsh-on:click="show = false" style="background-color: {{ lightenBG(config('flash.theme.error'),0.3) }}" >
@@ -28,7 +28,7 @@
             </div>
 
             <div class="p-3 rounded-full px-5 text-xs w-full sm:text-sm text-white mx-auto mb-10 text-center shadow-lg z-[1000] {{ config('flash.enable_dark_mode') === true ? 'hidden dark:inline-block' : 'hidden' }} " style="background-color: {{ config('flash.dark-theme.error') }}">
-                <div class="flex gap-4 items-center min-w-52  w-full max-w-[320px] sm:max-w-screenjustify-between">
+                <div class="flex gap-4 items-center min-w-52  w-full max-w-[320px] sm:max-w-screen justify-between">
                     <p>{{ session('flash.message') }}</p>
 
                     <div class="cursor-pointer rounded-full opacity-80" fsh-on:click="show = false" style="background-color: {{ lightenBG(config('flash.dark-theme.error'),0.3) }}" >
