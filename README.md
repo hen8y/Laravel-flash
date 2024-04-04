@@ -68,6 +68,16 @@ return [
     |
     */
     "timeout" => 2000,
+    /*
+    |--------------------------------------------------------------------------
+    | Enable Cancel Button
+    |--------------------------------------------------------------------------
+    |
+    | Enable the close notification button
+    |
+    |
+    */
+    "enable_cancel_btn" => false,
 
      /*
     |--------------------------------------------------------------------------
@@ -78,8 +88,13 @@ return [
     |
     */
     "cancel_btn_type" => "svg",
+    /**
+     * If text is chosen as btn_type, enter the text to be chosen below or
+     * leave default
+     *
+     */
 
-
+    "btn_text" => "close",
 
     /*
     |--------------------------------------------------------------------------
@@ -90,6 +105,7 @@ return [
     | If dark mode if enabled this would be used as light mode theme
     |
     | MUST BE HEX.
+    |
     */
     "theme" => [
         "info" => "#232113",
@@ -116,6 +132,7 @@ return [
     ]
 
 ];
+
 
 ```
 

@@ -11,6 +11,16 @@ return [
     |
     */
     "timeout" => 2000,
+    /*
+    |--------------------------------------------------------------------------
+    | Enable Cancel Button
+    |--------------------------------------------------------------------------
+    |
+    | Enable the close notification button
+    |
+    |
+    */
+    "enable_cancel_btn" => false,
 
      /*
     |--------------------------------------------------------------------------
@@ -21,8 +31,13 @@ return [
     |
     */
     "cancel_btn_type" => "svg",
+    /**
+     * If text is chosen as btn_type, enter the text to be chosen below or
+     * leave default
+     *
+     */
 
-
+    "btn_text" => "close",
 
     /*
     |--------------------------------------------------------------------------

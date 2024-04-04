@@ -17,13 +17,15 @@
                 <div class="flex gap-4 items-center min-w-52  w-full max-w-[320px] sm:max-w-screen justify-between">
                     <p>{{ session('flash.message') }}</p>
 
-                    <div class="cursor-pointer rounded-full opacity-80" fsh-on:click="show = false" style="background-color: {{ lightenBG(config('flash.theme.error'),0.3) }}" >
-                        @if(config('flash.cancel_btn_type') == 'svg')
-                            <x-flash::svg.cancel size="25" />
-                        @else
-                            <div class="px-2 p-1 text-xs">close</div>
-                        @endif
-                    </div>
+                    @if (config('flash.enable_cancel_btn') === true) 
+                        <div class="cursor-pointer rounded-full opacity-80" fsh-on:click="show = false" style="background-color: {{ lightenBG(config('flash.theme.error'),0.3) }}" >
+                            @if(config('flash.cancel_btn_type') == 'svg')
+                                <x-flash::svg.cancel size="25" />
+                            @else
+                                <div class="px-2 p-1 text-xs">{{ config('flash.btn_text') }}</div>
+                            @endif
+                        </div>
+                    @endif
                 </div>
             </div>
 
