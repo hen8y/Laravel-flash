@@ -17,7 +17,7 @@ composer require hen8y/laravel-flash
 Or add the following line to the require block of your `composer.json` file.
 
 ```php
-"hen8y/laravel-flash": "^2.0"
+"hen8y/laravel-flash": "^2."
 ```
 
 You'll then need to run `composer install` or `composer update` to download it and have the autoloader updated.
@@ -77,7 +77,7 @@ return [
     |
     |
     */
-    "enable_cancel_btn" => false,
+    "enable_cancel_btn" => true,
 
      /*
     |--------------------------------------------------------------------------
