@@ -1,5 +1,6 @@
 # laravel-flash
 
+![downloads](https://img.shields.io/packagist/dt/hen8y/laravel-flash.svg)
 ## Demo
 
 Checkout demo of the [laravel-flash](https://hen8y.dev/demo/flash)
