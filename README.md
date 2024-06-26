@@ -8,6 +8,8 @@ Checkout demo of the [laravel-flash](https://hen8y.dev/demo/flash)
 
 [PHP](https://php.net) 8.0, [LARAVEL](https://laravel.com), and [Composer](https://getcomposer.org) are required.
 
+If you Intend to use livewire, make sure it is required  [LIVEWIRE](https://livewire.laravel.com),
+
 To get the latest version of Laravel Flash, simply require it
 
 ```bash
@@ -175,9 +177,9 @@ To display a flash message, you call the `flash` method. it accepts 2 parameter
 - Type ( There 3 types of notifications: `Info`, `success`, `error` )
 - Message.
 
-The message type must always be lower case
+The flash type must always be lower case
 
-Example Usage:
+#### Example Usage:
 
 ```php
     Route::get('/test', function () {
@@ -188,6 +190,28 @@ Example Usage:
 
     });
 ```
+
+#### Livewire Example Usage
+
+Using livewire volt 
+
+```blade 
+    <?php
+
+    use Livewire\Volt\Component;
+
+    new class extends Component
+    {
+        public function refresh()
+        {
+            flash("info", "This is an info message");
+            $this->redirectRoute("home", navigate: true);
+        }
+    };
+
+    ?>
+```
+
 
 ## Contributing
 
