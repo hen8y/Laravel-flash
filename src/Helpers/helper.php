@@ -1,7 +1,5 @@
 <?php
 
-use Hen8y\Flash\LaravelFlash;
-
 if (!function_exists('flash')) {
     function flash($type = null, $message = null)
     {
@@ -41,10 +39,4 @@ if(!function_exists('lightenBG')) {
         $newHex = sprintf("#%02x%02x%02x", $r, $g, $b);
         return $newHex;
     }
-    
 }
-
-
-
-
-

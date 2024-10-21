@@ -29,19 +29,12 @@ class LaravelFlashServiceProvider extends ServiceProvider
     }
 
 
-
-
     public function register(): void
     {
-        $this->mergeConfigFrom(
-            __DIR__ . '/../config/flash.php',
-            'flash'
-        );
+        $this->mergeConfigFrom(__DIR__ . '/../config/flash.php', 'flash');
 
         $this->app->singleton("flash", function ($app) {
             return $app->make(LaravelFlash::class);
         });
     }
-
-
 }
